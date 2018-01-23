@@ -1,144 +1,285 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-        <title>个人主页</title>
-
-
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-
-    <link rel="shortcut icon" href="./images/favicon.ico"/>
-
-    <!--lib css-->
-    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
-    <link rel="stylesheet" href="css/animate.css">
-
-    <!--personal css-->
-    <link rel="stylesheet" href="css/index.css"/>
+    <title>个人主页</title>
+    <link rel="stylesheet" href="response/response.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/gr.png">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
 </head>
 <body>
-<!--导航栏-->
-<nav class="navbar navbar-default resume">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand EngName" data-menuanchor="page1" href="#page1">王锦鹏</a>
+<div id="box">
+    <div class="section">
+        <div class="home">
+            <div class="home_content">
+                <h1>Hello</h1>
+            </div>
+            <div class="home_mouse">
+                <div class="scroll"></div>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right" id="menu">
-                <li data-menuanchor="page2" class="active">
-                    <a href="#page2">基本资料</a>
+    </div>
+    <div class="section">
+        <div id="menu">
+            <ul>
+                <li data-menuanchor="p1" class="active">
+                    <a href="#p1">首页</a>
                 </li>
-                <li data-menuanchor="page3">
-                    <a href="#page3">专业技能</a>
+                <li data-menuanchor="p2">
+                    <a href="#p2">关于我</a>
                 </li>
-                <li data-menuanchor="page4">
-                    <a href="#page4">工作经历</a>
+                <li data-menuanchor="p3">
+                    <a href="#p3">专业技能</a>
                 </li>
-                <li data-menuanchor="page5">
-                    <a href="#page5">项目经验</a>
+                <li data-menuanchor="p4">
+                    <a href="#p4">我的作品</a>
                 </li>
-                <li data-menuanchor="page6">
-                    <a href="#page6">自我评价</a>
+                <li data-menuanchor="p5">
+                    <a href="#p5">与我联系</a>
                 </li>
             </ul>
         </div>
-    </div>
-</nav>
-<div class="guns sky">
-    <div class="clouds_one"></div>
-    <div class="clouds_two"></div>
-    <div class="clouds_three"></div>
-</div>
-<div class="pure">
 
-</div>
-<div id="resume">
-    <div class="section item-1">
-        <div class="row word">
-            <span class="resume-hide">前端工程师</span>
-            <span class="hidden-xs resume-hide">简历</span>
-            <span class="col-xs-12 hidden-sm hidden-md hidden-lg resume-hide">简历</span>
-
-            <p class="motto resume-hide hinge-sty" style="position: relative">爱技术，爱生活</p>
-            <a href="#" class="next-page ">
-                <span class="glyphicon glyphicon-chevron-down"></span>
-            </a>
-        </div>
-    </div>
-    <div class="section item-2">
-        <div class="container">
-            <h class='hidden-xs hidden-sm page2-title'>基本资料</h>
-            <div class="row">
-                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
-                    <img src="./images/page-2/glass.png" alt="">
-                    <h4>基本信息</h4>
-                    <p>
-                        姓名: 王锦鹏 男
-                        <br>
-                        年龄: 24岁 籍贯：山西
-                    </p>
+        <section class="about">
+            <div class="container">
+                <div class="about-head">
+                    <h1>关于我</h1>
+                    <p>座右铭<br>心如止水</p>
                 </div>
-                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
-                    <img src="./images/page-2/hat.png" alt="">
-                    <h4>毕业院校</h4>
-                    <p>
-                        山西工商学院
-                    </p>
-
-                </div>
-                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
-                    <img src="./images/page-2/book.png" alt="">
-                    <h4>学历和专业</h4>
-                    <p>
-                        工程管理 本科
-                        <br>
-                        专业技能 编程
-                    </p>
-                </div>
-                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
-                    <img src="./images/page-2/tel.png" alt="">
-                    <h4>联系方式</h4>
-                    <p>
-                        邮箱 857245460@qq.com
-                        <br>
-                        电话18435179724
-                    </p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="about-image">
+                            <img src="img/about.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h1>自我介绍</h1>
+                        <p>我叫王锦鹏，毕业于山西工商学院。爱好看书和看球，最喜欢的书是基督山伯爵，<br>最喜欢的足球俱乐部是皇家马德里。熟练掌握CSS与html的运用。<br>精通FLEX布局、移动端布局等多种布局方式。<br>完成了小米商城、苏宁商城、360商城等多个页面布局。还有苹果官网的响应式等。<br>我的优点是学习能力较强，接受新技术的时间很快，并且在页面布局过程中细心且精致。<br>缺点是做项目时偶尔会有一些优柔寡断，<br>有时需要花很多时间考虑一个布局怎样才能做到最好。
+                        </p>
+                    </div>
                 </div>
             </div>
-
+        </section>
+    </div>
+    <div class="section">
+        <div class="second">
+            <div class="container">
+                <div class="second-head">
+                    <h1>掌握技术</h1>
+                    <p>css与html</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="neikuang">
+                            <i class="iconfont six">&#xe62d;</i>
+                            <h2>Photo Shop</h2>
+                            <p>图像处理是对已有的位图图像进行编辑加工处理以及运用一些特殊效果，其重点在于对图像的处理加工。</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="neikuang">
+                            <i class="iconfont six">&#xe605;</i>
+                            <h2>Adobe Illustrator</h2>
+                            <p>最大特征在于钢笔工具的使用，使得操作简单功能强大的矢量绘图成为可能。它还集成文字处理、上色等功能。</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="neikuang">
+                            <i class="iconfont six">&#xe600;</i>
+                            <h2>CSS</h2>
+                            <p>层叠样式表是一种用来表现HTML或XML等文件样式的计算机语言。CSS可以配合各种脚本语言动态地对网页各元素进行格式化。</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="neikuang">
+                            <i class="iconfont six">&#xe65e;</i>
+                            <h2>HTML</h2>
+                            <p>超级文本标记语言是是一种规范，一种标准，它通过标记符号来标记要显示的网页中的各个部分。</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="neikuang">
+                            <i class="iconfont six">&#xe60f;</i>
+                            <h2>Flex布局</h2>
+                            <p>Flex布局也即弹性布局，用于实现多个元素的水平居中等位置关系</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="neikuang">
+                            <i class="iconfont six">&#xe606;</i>
+                            <h2>响应式</h2>
+                            <p>响应式布局可以让同个页面适应不同大小的分辨率。同时兼容各个终端</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="section item-3">
-
-    </div>
-    <div class="section item-4" id='item-4'>
-        <div class="container">
-            <span class='title hidden-xs  hidden-sm' style='display: inline-block'>个人经历</span>
-            <span class='sign col-xs-12 hidden-xs  hidden-sm' style='font-size: 20px'>热爱技术,专注用户体验</span>
+    <div class="section">
+        <div class="second bai">
+            <div class="container">
+                <div class="second-head">
+                    <h1>我的作品</h1>
+                    <p>小米商城、苏宁商城、苹果官网响应式、移动端外卖app</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="image">
+                            <img src="img/xm.jpg" alt="">
+                            <div class="zhezhao"></div>
+                            <a href="https://wang-jinpeng.github.io/mi/" target="-blank"><i class="iconfont lianjie">&#xe6a3;</i></a>
+                            <h4>小米商城</h4>
+                            <h5>基础布局，移入效果</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="image">
+                            <img src="img/pg.jpg" alt="">
+                            <div class="zhezhao"></div>
+                            <a href="https://wang-jinpeng.github.io/apple/" target="-blank"><i class="iconfont lianjie">&#xe6a3;</i></a>
+                            <h4>Apple官网</h4>
+                            <h5>响应式的实际应用</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="image">
+                            <img src="img/sn.jpg" alt="">
+                            <div class="zhezhao"></div>
+                            <a href="https://wang-jinpeng.github.io/suning/" target="-blank"><i
+                                    class="iconfont lianjie">&#xe6a3;</i></a>
+                            <h4>苏宁易购</h4>
+                            <h5>细腻布局，实力体现</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="image">
+                            <img src="img/xm.jpg" alt="">
+                            <div class="zhezhao"></div>
+                            <a href="https://wang-jinpeng.github.io/mi/" target="-blank"><i class="iconfont lianjie">&#xe6a3;</i></a>
+                            <h4>小米商城</h4>
+                            <h5>基础布局，移入效果</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="image">
+                            <img src="img/wm.jpg" alt="">
+                            <div class="zhezhao"></div>
+                            <a href="https://wang-jinpeng.github.io/app/index.html" target="-blank"><i
+                                    class="iconfont lianjie">&#xe6a3;</i></a>
+                            <h4>随便送app</h4>
+                            <h5>移动端布局</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="image">
+                            <img src="img/sn.jpg" alt="">
+                            <div class="zhezhao"></div>
+                            <a href="https://wang-jinpeng.github.io/suning/" target="-blank"><i
+                                    class="iconfont lianjie">&#xe6a3;</i></a>
+                            <h4>苏宁易购</h4>
+                            <h5>细腻布局，实力体现</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="section item-5">
-
-    </div>
-    <div class="section item-6">
-
+    <div class="section">
+        <div class="second">
+            <div class="second-head">
+                <h1>与我联系</h1>
+                <p>提出您宝贵的意见与建议</p>
+            </div>
+            <div class="container">
+                <ul class="row">
+                    <li class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                        <div class="shuru">
+                            <input type="text" name="name" placeholder="您的名字" class="contact-input"/>
+                            <input type="email" name="email" placeholder="您的邮箱" class="contact-input"/>
+                            <textarea rows="6" class="contact-input">您想说些....</textarea>
+                            <input type="submit" value="提交" class="tijiao">
+                        </div>
+                    </li>
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="wo">
+                            <div class="wode">
+                                <div class="wo-icon">
+                                    <span><i>&#xe68b;</i></span>
+                                </div>
+                                <div class="wenzi">
+                                    <p>山西省太原市小店区<br>平阳路学府街口凯通大厦</p>
+                                </div>
+                            </div>
+                            <div class="wode">
+                                <div class="wo-icon">
+                                    <span><i>&#xe6be;</i></span>
+                                </div>
+                                <div class="wenzi">
+                                    <p>184-3517-9724 <br/>137-3400-0057</p>
+                                </div>
+                            </div>
+                            <div class="lianxi-y-n">
+                                <div class="wo-icon">
+                                    <span><i>&#xe692;</i></span>
+                                </div>
+                                <div class="wenzi">
+                                    <p>857245460@qq.com
+                                        <br/>857245460@qq.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <p>Copyright © 2017.Company name All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i>&#xe601;</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i>&#xe602;</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i>&#xe620;</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i>&#xe66e;</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i>&#xec9c;</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shang">
+                        <i>&#xe667;</i>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </div>
 </body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
 </html>
-<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="lib/jquery.fullPage.min.js"></script>
-<script src="lib/jquery.easing.1.3.js"></script>
-<script src="lib/jquery.isotope.js"></script>
-<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
-<script src="js/handler.js"></script>
-<script src="js/resumeEnter.js"></script>
