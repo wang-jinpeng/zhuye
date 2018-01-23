@@ -1,0 +1,363 @@
+/*
+* @Author: Administrator
+* @Date:   2017-12-12 14:30:34
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-12-14 09:48:40
+*/
+@import url("../css/base.css");
+.about{
+	padding: 120px 0;
+}
+.about-head{
+	max-width: 600px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.about-head h1{
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.about-head p{
+	font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+}
+.about-image img{
+	width: 100%;
+	height: 100%;
+}
+.row h1{
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.row p{
+	font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+}
+.second{
+    padding: 120px 0;
+}
+.second-head{
+    max-width: 600px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.second-head h1{
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.second-head p{
+	font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+}
+.second .row .neikuang{
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: 0.5s;
+} 
+.second .row .neikuang .six{
+	font-size: 36px;
+}
+.second .row .neikuang:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 3px 10px 3px  rgba(0, 0, 0, 0.3)
+}
+.second .row h1{
+	font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.second .row h2{
+	font-size: 24px;
+    color: #0d0d0d;
+    margin-bottom: 10px;
+}
+.second .row .image{
+	height: 240px;
+	margin-bottom: 30px;
+		position: relative;
+}
+.second .row .image img{
+    width: 100%;
+    height: 100%;
+}
+.second .row .zhezhao{
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    opacity: 0;
+    transition: .5s;
+}
+.second .row .image:hover .zhezhao{
+	opacity: 1;
+}
+.second .row a{
+	 color: #fff;
+    background-color: rgba(255,255,255, .8);
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    margin: 2px;
+    display: inline-block;
+    border-radius: 100%;
+    transition: .5s;
+    transform: scale(0.0);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 80px;
+}
+.second .row a .lianjie{
+    font-size: 22px;
+    line-height: 36px;
+}
+.second .row .image:hover a{
+	opacity: 1;
+	transform: scale(1);
+}
+.second .row .image a:hover{
+    background: #00BFFF;
+    color: #fff;
+}
+.second .row .image h4{
+	font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    margin-top: 15px;
+    letter-spacing: -8px;
+    transition: .5s;
+    opacity: 0;
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    text-align: center;
+}
+.second .row .image h5{
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	opacity: 0;
+    position: absolute;
+    bottom: 0;
+    transition: 0.5s;
+    font-weight: normal;
+}
+.second .row .image:hover h4{
+	opacity: 1;
+	letter-spacing: 2px;
+}
+.second .row .image:hover h5{
+	opacity: 1;
+	transform: translateY(-50px)
+}
+.contact-input{
+	background: #F3F3F4;
+	width: 100%;
+  border: 1px solid #000;
+  border-radius: 3px;
+  outline: none;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.tijiao{
+	padding: 10px 30px;
+	background: #1a1a1a;
+	border: 0;
+	border-radius: 2px;
+	color: #fff;
+}
+.tijiao:hover{
+	cursor: pointer;
+}
+.shuru{
+	width: 100%;
+}
+.wode{
+	margin-bottom: 30px;
+  overflow: hidden;
+	}
+.wo-icon{
+	float: left;
+	margin-right: 15px;
+}  
+.wo-icon{
+	display: block;
+	height: 60px;
+	width: 60px;
+	background-color: #03A9F4;
+	color: #55575d;
+	font-size: 36px;
+  text-align: center;
+  line-height: 60px;
+}
+.wo-icon span i{
+	font-size: 36px;
+}
+.wenzi{
+	font-size: 16px;
+	color: #959595;
+}  
+footer{
+	background-color: #0d1218;
+	color: #fff;
+	padding: 42px 0px;
+}
+footer .row p{
+	color: #fff;
+	margin: 0px;
+	padding: 6px 0px;
+	font-size: 14px;
+}
+footer ul{
+	float: right;
+	margin: 0px;
+}
+footer ul li{
+	float: left;
+	margin-right: 5px;
+}
+footer ul li a{
+	display: inline-block;
+	font-size: 16px;
+	color: #252525;
+	height: 36px;
+	width: 36px;
+	background-color: rgba(255, 255, 255, .5);
+	border-radius: 100%;
+	text-align: center;
+	transition: all 0.25s;
+}
+footer ul li a i{
+	font-size: 16px;
+	line-height: 36px;
+}
+footer ul li a:hover{
+	background: deepskyblue;
+	color: #FFFFFF;
+}
+footer{
+	position: relative;
+}
+.shang{
+	width: 36px;
+	height: 36px;
+	transform: translateX(50%) translateY(-50%) rotate(45deg);
+	background-color: #0d1218;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  line-height: 38px;
+  color: #fff;
+  position: absolute;
+  right: 50%;
+  top: 0;
+    cursor: pointer;
+}
+.shang i{
+	display: block;
+	transform: rotate(-45deg);
+}
+.shang:hover{
+	background: deepskyblue;
+	color: #000000;
+}
+#menu {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.61);
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
+}
+#menu ul{
+    display: flex;
+    align-items: center;
+}
+#menu ul li{
+    height: 100%;
+}
+#menu ul li a{
+    display: block;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+}
+.home {
+    width: 100%;
+    height: 100%;
+    background: url(../img/beijing.jpg);
+    background-size: cover;
+    position: relative;
+}
+.home_content {
+    position: absolute;
+    text-align: center;
+    width: 170px;
+    height: 130px;
+    left: calc(50% - 130px);
+    top: calc(50% - 230px);
+    padding: 40px;
+
+    outline-offset: 8px;
+}
+
+.home_content h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+}
+
+.home_content span {
+    font-size: 16px;
+}
+
+
+#menu ul li.active a{
+    color: skyblue;
+}
+@media screen and (max-width: 768px){
+    .about-image img{
+    	margin-bottom: 30px;
+    }
+	.wo{
+		margin-top: 40px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+}
+@media screen and (min-width: 1200px){
+
+}
