@@ -124,6 +124,10 @@
 .second .row a .lianjie{
     font-size: 22px;
     line-height: 36px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 .second .row .image:hover a{
 	opacity: 1;
@@ -341,6 +345,83 @@ footer{
 }
 
 
+.scene .box {
+    width: 390px;
+    height: 270px;
+    position: absolute;
+    text-align: center;
+    line-height: 270px;
+    left: 300px;
+    top: 100px;
+    transform-origin: center center -500px;
+}
+.scene {
+    width: 990px;
+    height: 590px;
+    margin: 0 auto;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+}
+
+.scene .bigbox {
+    width: 990px;
+    height: 590px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    transform-origin: center center -500px;
+}
+.scene .box:first-child{
+    transform: rotateY(60deg);
+}
+
+.scene .box:nth-child(2){
+    transform: rotateY(120deg);
+}
+
+.scene .box:nth-child(3){
+    transform: rotateY(180deg);
+}
+
+.scene .box:nth-child(4){
+    transform: rotateY(240deg);
+}
+
+.scene .box:nth-child(5){
+    transform: rotateY(300deg);
+}
+.scene .box:nth-child(6){
+    transform: rotateY(360deg);
+}
+.scene .next,.prev{
+    position: absolute;
+    right: 300px;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid deepskyblue;
+    cursor: pointer;
+    font-size: 20px;
+    color: deepskyblue;
+    transition: all .5s;
+}
+
+.scene .prev{
+    left: 300px;
+}
+.scene .next:hover{
+    background: deepskyblue;
+    color: white;
+}
+.scene .prev:hover{
+    background: deepskyblue;
+    color: white;
+}
 #menu ul li.active a{
     color: skyblue;
 }
