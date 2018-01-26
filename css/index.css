@@ -13,6 +13,8 @@
 	text-align: center;
 	margin: 0 auto;
 	margin-bottom: 50px;
+    transform:translateY(-1000px);
+    transition:1.5s all;
 }
 .about-head h1{
 	font-size: 36px;
@@ -23,6 +25,20 @@
 	font-size: 14px;
     line-height: 22px;
     color: #fff;
+}
+.about_left{
+    width:50%;
+    height:100%;
+    float:left;
+    transform:translateX(-1000px);
+    transition:.5s all;
+}
+.about_right{
+    width:50%;
+    height:100%;
+    float:left;
+    transform:translateX(1000px);
+    transition:.5s all;
 }
 .about-image img{
 	width: 100%;
@@ -62,7 +78,28 @@
     text-align: center;
     margin-bottom: 30px;
     transition: 0.5s;
-} 
+}
+.second .row .jineng{
+    transition: .5s;
+    transform: scale(0.0);
+
+}
+.last{
+    transition: .5s;
+    transform: translateY(1000px);
+}
+/*@keyframes xuanzhuan {*/
+    /*0%{*/
+        /*transform: rotate(0deg);*/
+
+    /*}*/
+    /*100%{*/
+        /*transform: rotate(360deg);*/
+    /*}*/
+/*}*/
+/*.xuanzhaun{*/
+    /*animation:xuanzhuan ease .5s;*/
+/*}*/
 .second .row .neikuang .six{
 	font-size: 36px;
 }
@@ -102,6 +139,10 @@
 .second .row .image:hover .zhezhao{
 	opacity: 1;
 }
+.bai{
+    transition: .5s;
+    transform: translateX(1500px);
+}
 .second .row a{
 	 color: #fff;
     background-color: rgba(255,255,255, .8);
@@ -111,15 +152,16 @@
     margin: 2px;
     display: inline-block;
     border-radius: 100%;
-    transition: .5s;
+    transition: 1.5s;
     transform: scale(0.0);
-    opacity: 0;
+    /*opacity: 0;*/
     position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     top: 80px;
+    z-index: 999;
 }
 .second .row a .lianjie{
     font-size: 22px;
@@ -130,7 +172,6 @@
     top: 0;
 }
 .second .row .image:hover a{
-	opacity: 1;
 	transform: scale(1);
 }
 .second .row .image a:hover{
@@ -329,7 +370,8 @@ footer{
     left: calc(50% - 130px);
     top: calc(50% - 230px);
     padding: 40px;
-
+    transform:translateY(-500px);
+    transition:.5s all;
     outline-offset: 8px;
 }
 
@@ -425,6 +467,7 @@ footer{
 #menu ul li.active a{
     color: skyblue;
 }
+
 @media screen and (max-width: 768px){
     .about-image img{
     	margin-bottom: 30px;
